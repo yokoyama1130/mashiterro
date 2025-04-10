@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   # def after_sign_in_path_for(resource)
   #   about_path
   # end
-  # 遷移先の変更
+  # ログイン後のの遷移先のを一覧画面に変更
   def after_sign_in_path_for(resource)
     post_images_path
   end
