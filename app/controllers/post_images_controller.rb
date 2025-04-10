@@ -14,7 +14,9 @@ class PostImagesController < ApplicationController
     @post_images = PostImage.all
   end
 
+  # idの投稿を表示するようにした（あってるかわかんないから仮のコード）
   def show
+    @post_image = PostImage.find(params[:id])
   end
 
   private
