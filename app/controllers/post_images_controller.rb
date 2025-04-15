@@ -20,7 +20,7 @@ class PostImagesController < ApplicationController
   end
 
   def destroy
-    post_image = PostImage(params[:id]) #削除するPostImageレコードを取得
+    post_image = PostImage.find(params[:id]) #削除するPostImageレコードを取得
     post_image.destroy #削除
     redirect_to "/post_images" #PostImageの一覧ページへのパス
   end
