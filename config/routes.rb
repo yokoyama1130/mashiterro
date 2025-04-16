@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  # 自動で作ってくれたけど、resourcesで一括したいのでコメントアウト
+  # get 'users/show'
+  # get 'users/edit'
+  # これが変わりのコード
+  resources :users, only: [:show, :edit]
+
   # get 'post_images/new'
   # get 'post_images/index'
   # get 'post_images/show'
