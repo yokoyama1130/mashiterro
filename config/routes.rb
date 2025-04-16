@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   # get 'users/show'
   # get 'users/edit'
   # これが変わりのコード
-  resources :users, only: [:show, :edit]
+  # updateを追加した
+  resources :users, only: [:show, :edit, :update]
 
   # get 'post_images/new'
   # get 'post_images/index'
